@@ -33,17 +33,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: 'Java基础', link: '/pages/b68651/' },
           { text: 'Java容器', link: '/pages/892d69/' },
           { text: 'Java并发编程', link: '/pages/5240d7/' },
-          { text: 'Java虚拟机', link: '/pages/8309a5b876fc95e3/' },
+          { text: 'Java虚拟机', link: '/pages/6198af/' },
         ],
       },
       {
         text: '计算机基础',
         link: '/basics/',
         items: [
-          { text: '计算机网络', link: '/pages/8309a5b876fc95e3/' },
+          { text: '计算机网络', link: '/pages/4e9070/' },
           { text: '操作系统', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'MySQL', link: '/pages/0a83b083bdf257cb/' },
-          { text: '数据结构与算法', link: '/pages/8309a5b876fc95e3/' },
+          { text: 'MySQL', link: '/pages/23bee8/' },
+          { text: '数据结构与算法', link: '/pages/457448/' },
         ],
       },
       {

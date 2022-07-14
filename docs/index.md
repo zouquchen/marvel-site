@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/avatar.jpg
+# heroImage: /img/avatar.jpg
 heroText: Marvel-Site
 tagline: Java后端开发学习笔记
 bannerBg: auto

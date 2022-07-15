@@ -3,7 +3,8 @@ home: true
 # heroImage: /img/avatar.jpg
 heroText: Marvel-Site
 tagline: Java后端开发学习笔记
-bannerBg: auto
+pageClass: vdoing-index-class
+# bannerBg: auto
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
@@ -27,3 +28,8 @@ bannerBg: auto
 # simplePostListLength: 10 # 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
 # hideRightBar: true # 是否隐藏右侧边栏
 ---
+
+<ClientOnly>
+  <WebInfo />
+  <IndexBigImg />
+</ClientOnly>

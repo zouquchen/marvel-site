@@ -51,22 +51,54 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '框架',
         link: '/framework/',
         items: [
-          { text: 'Spring', link: '/pages/8309a5b876fc95e3/' }
+          { text: 'Spring', link: '/pages/a63f9f/' }
         ],
       },
       {
         text: '中间件',
         link: '/middleware/',
         items: [
-          { text: 'Redis', link: '/pages/8309a5b876fc95e3/' },
-          { text: '消息队列', link: '/pages/8309a5b876fc95e3/' }
+          { text: 'Redis', link: '/pages/258dd8/' },
+          { text: '消息队列', link: '/pages/6bb532/' }
         ],
       },
       {
         text: '分布式',
         link: '/distributed/',
         items: [
-          { text: '基础理论', link: '/pages/8309a5b876fc95e3/' }
+          { text: '基础理论', link: '/pages/5d4819/' }
+        ],
+      },
+      {
+        text: '工具',
+        link: '/tools/',
+        items: [
+          { text: '实用工具', link: '/pages/59ba19/' },
+          { 
+            text: '安装配置', 
+            link: '/install/',
+            items: [
+              { text: 'Linux', link: '/pages/ecefe5/' },
+              { text: 'Windows', link: '/pages/eae8e6/' }
+            ],
+          },
+          { 
+            text: '开发工具', 
+            link: '/devTools/',
+            items: [
+              { text: 'IDEA', link: '/pages/13c304/' },
+              { text: 'VsCode', link: '/pages/3f5859/' }
+            ],
+          },
+          { 
+            text: '管理工具', 
+            link: '/managerTools/',
+            items: [
+              { text: 'Git', link: '/pages/a1762f/' },
+              { text: 'Maven', link: '/pages/3a5633/' }
+            ],
+          },
+          
         ],
       },
       {
@@ -74,18 +106,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/more/',
         items: [
           { text: '关于', link: '/pages/ec4e5b/' },
-          { text: '软件安装', link: '/pages/aea6571b7a8bae86/' }
+          {
+            text: '索引',
+            link: '/archives/',
+            items: [
+              { text: '分类', link: '/categories/' },
+              { text: '标签', link: '/tags/' },
+              { text: '归档', link: '/archives/' },
+            ],
+          },
         ],
       },
-      {
-        text: '索引',
-        link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
-      },
+      
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
@@ -112,7 +144,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       indexView: true,  // 开启首页的访问量和排名统计，默认 true（开启）
       pageView: true,  // 开启文章页的浏览量统计，默认 true（开启）
       readingTime: true,  // 开启文章页的预计阅读时间，条件：开启 eachFileWords，默认 true（开启）。可在 eachFileWords 的 readEachFileWords 的第二个和第三个参数自定义，默认 1 分钟 300 中文、160 英文
-      eachFileWords: readEachFileWords([''], 200, 130),  // 开启每个文章页的字数。readEachFileWords(['xx']) 关闭 xx 目录（可多个，可不传参数）下的文章页字数和阅读时长，后面两个参数分别是 1 分钟里能阅读的中文字数和英文字数。无默认值。readEachFileWords() 方法默认排除了 article 为 false 的文章
+      eachFileWords: readEachFileWords([''], 300, 160),  // 开启每个文章页的字数。readEachFileWords(['xx']) 关闭 xx 目录（可多个，可不传参数）下的文章页字数和阅读时长，后面两个参数分别是 1 分钟里能阅读的中文字数和英文字数。无默认值。readEachFileWords() 方法默认排除了 article 为 false 的文章
       mdFileCountType: 'archives',  // 开启文档数。1. archives 获取归档的文档数（默认）。2. 数组 readFileList(['xx']) 排除 xx 目录（可多个，可不传参数），获取其他目录的文档数。提示：readFileList() 获取 docs 下所有的 md 文档（除了 `.vuepress` 和 `@pages` 目录下的文档）
       totalWords: 'archives',  // 开启本站文档总字数。1. archives 获取归档的文档数（使用 archives 条件：传入 eachFileWords，否则报错）。2. readTotalFileWords(['xx']) 排除 xx 目录（可多个，可不传参数），获取其他目录的文章字数。无默认值
       moutedEvent: '.tags-wrapper',   // 首页的站点模块挂载在某个元素后面（支持多种选择器），指的是挂载在哪个兄弟元素的后面，默认是热门标签 '.tags-wrapper' 下面，提示：'.categories-wrapper' 会挂载在文章分类下面。'.blogger-wrapper' 会挂载在博客头像模块下面
@@ -249,7 +281,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],  // 网站统计需要的图标、文章阅读时间的图标，别人的cdn 
-    //['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }], // 代码块折叠需要的图标，别人的cdn
+    ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }], // 代码块折叠需要的图标，别人的cdn
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],  // 占中统计需要修改的地方，防止Chrome保护隐私统计数据错误
     // [
     //   'script',
@@ -347,8 +379,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           clientID: 'a6e1355287947096b88b',
           clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
           repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
+          owner: 'zouquchen', // GitHub仓库所有者
+          admin: ['zouquchen'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50

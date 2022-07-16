@@ -182,7 +182,7 @@ div[class*="language-"]::before {
   position: absolute;
   z-index: 3;
   top: 0.3em;
-  left: 4.7rem;
+  left: 1rem;  /* 去掉了三个点，修改了左侧的距离*/
   font-size: 1.15em;
   color: rgba(238, 255, 255, 0.8);
   /* text-transform: uppercase; 注释掉大写 */
@@ -199,7 +199,7 @@ div[class*="language-"].line-numbers-mode::after {
   margin-top: 35px;
 }
 /* 代码块的三个圆圈颜色 */
-.circle {
+/* .circle {
   position: absolute;
   top: 0.8em;
   left: 0.9rem;
@@ -209,7 +209,7 @@ div[class*="language-"].line-numbers-mode::after {
   background: #fc625d;
   -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
   box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-}
+} */
 /* 代码块一键复制图标 */
 .code-copy {
   position: absolute;
@@ -223,7 +223,7 @@ div[class*="language-"].line-numbers-mode::after {
 }
 
 /* 如果你浅色模式的代码块背景色是浅灰色，则取消下面的注释使代码生效，如果是黑色，则注释下面的三段代码（我注释了，因为是黑色背景） */
-/* .theme-mode-light .expand {
+.theme-mode-light .expand {
   color: #666;
 }
 .theme-mode-light div[class*="language-"]::before {
@@ -231,5 +231,5 @@ div[class*="language-"].line-numbers-mode::after {
 }
 .theme-mode-light .code-copy {
   fill: #666;
-} */
+}
 </style>

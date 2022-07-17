@@ -378,16 +378,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         options: {
           clientID: 'd454f915686ac52affd0',
           clientSecret: 'a45e72945128d73d719b357bfe3db4f2388898d9',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
+          repo: 'marvel-site', // GitHub 仓库
           owner: 'zouquchen', // GitHub仓库所有者
           admin: ['zouquchen'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+          id: "<%- (window.location.origin + (frontmatter.to.path || window.location.pathname)).slice(-50) %>", //  页面的唯一标识,长度不能超过50
+          title: "「评论」<%- document.title %>", // GitHub issue 的标题
+          labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+          body:"<%- document.title %>: <%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>", // GitHub issue 的内容
         },
       },
     ],

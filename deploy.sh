@@ -25,8 +25,11 @@ else
   push_addr=https://zouquchen:${GITHUB_TOKEN}@github.com/zouquchen/zouquchen.github.io.git
   git config --global user.name "Marvel"
   git config --global user.email "670953242@qq.com"
+fi
 
 git init
 git add -A
 git commit -m "deploy, $commit_info"
 git push -f $push_addr HEAD:$push_branch
+
+cd -

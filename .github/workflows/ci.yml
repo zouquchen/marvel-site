@@ -33,4 +33,7 @@ jobs: # 工作流
         env: # 设置环境变量，未设置则不运行
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # token 
           SSH_PRIVATE_KEY: ${{ secrets.RSA_PRIVATE_KEY }} # 私钥
-        run: npm install && npm run deploy  # 执行 deploy.sh 脚本，位于项目根目录
+        run: 
+          git config --global user.email "670953242@qq.com" &&
+          git config --global user.name "Marvel" &&
+          npm install && npm run deploy  # 执行 deploy.sh 脚本，位于项目根目录

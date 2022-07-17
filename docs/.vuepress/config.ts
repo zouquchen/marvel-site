@@ -283,6 +283,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],  // 网站统计需要的图标、文章阅读时间的图标，别人的cdn 
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }], // 代码块折叠需要的图标，别人的cdn
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],  // 占中统计需要修改的地方，防止Chrome保护隐私统计数据错误
+    ['script', { src: 'https://lib.baomitu.com/twikoo/1.5.11/twikoo.all.min.js' }],  // twikoo依赖
     // [
     //   'script',
     //   {
@@ -371,7 +372,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    [
+    /*[
       'vuepress-plugin-comment', // 评论
       {
         choosen: 'gitalk',
@@ -389,7 +390,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           body:"<%- document.title %>: <%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>", // GitHub issue 的内容
         },
       },
-    ],
+    ],*/
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
@@ -401,7 +402,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     [
     	{
         	name: 'custom-plugins', // 自定义插件：网站信息统计、修改代码块显示
-        	globalUIComponents: ["PageInfo", "BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+        	globalUIComponents: ["PageInfo", "BlockToggle", "Twikoo"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
     	}
     ]
   ],

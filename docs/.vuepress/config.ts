@@ -78,7 +78,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: '安装配置', 
             link: '/install/',
             items: [
-              { text: 'Linux', link: '/pages/ecefe5/' },
+              { text: 'Linux', link: '/pages/08fe43/' },
               { text: 'Windows', link: '/pages/eae8e6/' }
             ],
           },

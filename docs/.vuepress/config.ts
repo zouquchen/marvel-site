@@ -42,7 +42,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/basics/',
         items: [
           { text: '计算机网络', link: '/pages/4e9070/' },
-          { text: '操作系统', link: '/pages/8309a5b876fc95e3/' },
+          { text: '操作系统', link: '/pages/27935a/' },
           { text: 'MySQL', link: '/pages/23bee8/' },
           { text: '数据结构与算法', link: '/pages/457448/' },
         ],
@@ -55,9 +55,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '中间件',
-        link: '/middleware/',
+        text: '高并发',
+        link: '/high-concurrency/',
         items: [
+          { text: '高并发', link: '/pages/ad036a/' },
           { text: 'Redis', link: '/pages/258dd8/' },
           { text: '消息队列', link: '/pages/6bb532/' }
         ],

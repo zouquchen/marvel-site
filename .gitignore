@@ -11,7 +11,7 @@ pnpm-lock.yaml
 
 # vscode
 .vscode
-vuepress-theme-vdoing.code-workspace
+marvel-site.code-workspace
 
 # vuepress
 docs/.vuepress/dist

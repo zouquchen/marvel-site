@@ -226,7 +226,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     blogger: {
       avatar: 'https://mine-bed.oss-cn-hangzhou.aliyuncs.com/avatar1.jpg',
       name: 'Marvel',
-      slogan: 'Could you give me an offer',
+      slogan: '吾必当乘此羽葆盖车',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)

@@ -55,19 +55,22 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '高并发',
-        link: '/high-concurrency/',
+        text: '架构',
+        link: '/architecture/',
         items: [
+          { text: '微服务', link: '/pages/d6e488/' },
+          { text: '分布式', link: '/pages/5d4819/' },
           { text: '高并发', link: '/pages/ad036a/' },
-          { text: 'Redis', link: '/pages/258dd8/' },
-          { text: '消息队列', link: '/pages/6bb532/' }
+          { text: '高可用', link: '/pages/2d8d93/' }
         ],
       },
       {
-        text: '分布式',
-        link: '/distributed/',
+        text: '中间件',
+        link: '/middleware/',
         items: [
-          { text: '基础理论', link: '/pages/5d4819/' }
+          { text: 'Redis', link: '/pages/258dd8/' },
+          { text: '消息队列', link: '/pages/6bb532/' },
+          { text: 'Zookeeper', link: '/pages/d3943f/' }
         ],
       },
       {

@@ -35,6 +35,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: 'Java容器', link: '/pages/892d69/' },
           { text: 'Java并发编程', link: '/pages/5240d7/' },
           { text: 'Java虚拟机', link: '/pages/6198af/' },
+          { text: '常见面试题', link: '/pages/1dd8bd/' }
         ],
       },
       {

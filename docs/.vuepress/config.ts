@@ -318,7 +318,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 'fulltext-search',
 
     // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
-    [
+    /*[
       'thirdparty-search',
       {
         thirdparty: [
@@ -345,7 +345,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       }
-    ],
+    ],*/
 
     [
       'one-click-copy', // 代码块复制按钮

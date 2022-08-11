@@ -46,8 +46,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '操作系统', link: '/pages/27935a/' },
           { text: 'MySQL', link: '/pages/23bee8/' },
           { text: 'Linux', link: '/pages/a766e8/' },
-          { text: '数据结构与算法', link: '/pages/457448/' },
-        ],
+          { text: '数据结构与算法', link: '/pages/7f453c/' },
+        ],  
       },
       {
         text: '框架',

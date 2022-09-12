@@ -113,6 +113,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: '关于', link: '/pages/ec4e5b/' },
           { text: '收藏', link: '/pages/732fd9/' },
+          { text: '草稿', link: '/pages/732fd9/' },
           {
             text: '索引',
             link: '/archives/',

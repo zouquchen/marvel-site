@@ -64,7 +64,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '分布式', link: '/pages/5d4819/' },
           { text: '高并发', link: '/pages/ad036a/' },
           { text: '高可用', link: '/pages/2d8d93/' },
-          { text: '高可用', link: '/pages/1c4157/' }
+          { text: '架构', link: '/pages/1c4157/' }
         ],
       },
       {

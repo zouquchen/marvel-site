@@ -8,6 +8,7 @@ import { readFileList, readTotalFileWords, readEachFileWords } from './webSiteIn
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
+import nav from './common/nav'
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: 'vdoing', // 使用npm主题包
@@ -24,110 +25,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 主题配置
   themeConfig: {
-    // 导航配置
-    nav: [
-      { text: '首页', link: '/' },
-      {
-        text: 'Java',
-        link: '/java/',
-        items: [
-          { text: 'Java基础', link: '/pages/b68651/' },
-          { text: 'Java容器', link: '/pages/892d69/' },
-          { text: 'Java并发编程', link: '/pages/5240d7/' },
-          { text: 'Java虚拟机', link: '/pages/6198af/' },
-          { text: '常见面试题', link: '/pages/1dd8bd/' }
-        ],
-      },
-      {
-        text: '计算机基础',
-        link: '/basics/',
-        items: [
-          { text: '计算机网络', link: '/pages/4e9070/' },
-          { text: '操作系统', link: '/pages/27935a/' },
-          { text: 'MySQL', link: '/pages/23bee8/' },
-          { text: 'Linux', link: '/pages/a766e8/' },
-          { text: '数据结构与算法', link: '/pages/7f453c/' },
-        ],  
-      },
-      {
-        text: '框架',
-        link: '/framework/',
-        items: [
-          { text: 'Spring', link: '/pages/a63f9f/' }
-        ],
-      },
-      {
-        text: '架构',
-        link: '/architecture/',
-        items: [
-          { text: '微服务', link: '/pages/d6e488/' },
-          { text: '分布式', link: '/pages/5d4819/' },
-          { text: '高并发', link: '/pages/ad036a/' },
-          { text: '高可用', link: '/pages/2d8d93/' },
-          { text: '架构', link: '/pages/1c4157/' }
-        ],
-      },
-      {
-        text: '中间件',
-        link: '/middleware/',
-        items: [
-          { text: 'Redis', link: '/pages/258dd8/' },
-          { text: '消息队列', link: '/pages/6bb532/' },
-          { text: 'Zookeeper', link: '/pages/d3943f/' }
-        ],
-      },
-      {
-        text: '工具',
-        link: '/tools/',
-        items: [
-          { text: '实用工具', link: '/pages/59ba19/' },
-          { 
-            text: '安装配置', 
-            link: '/install/',
-            items: [
-              { text: 'Linux', link: '/pages/08fe43/' },
-              { text: 'Windows', link: '/pages/eae8e6/' }
-            ],
-          },
-          { 
-            text: '开发工具', 
-            link: '/devTools/',
-            items: [
-              { text: 'IDEA', link: '/pages/13c304/' },
-              { text: 'VsCode', link: '/pages/3f5859/' }
-            ],
-          },
-          { 
-            text: '管理工具', 
-            link: '/managerTools/',
-            items: [
-              { text: 'Git', link: '/pages/a1762f/' },
-              { text: 'Maven', link: '/pages/3a5633/' }
-            ],
-          },
-          
-        ],
-      },
-      {
-        text: '更多',
-        link: '/more/',
-        items: [
-          { text: '关于', link: '/pages/ec4e5b/' },
-          { text: '收藏', link: '/pages/732fd9/' },
-          { text: '草稿', link: '/pages/732fd9/' },
-          {
-            text: '索引',
-            link: '/archives/',
-            items: [
-              { text: '分类', link: '/categories/' },
-              { text: '标签', link: '/tags/' },
-              { text: '归档', link: '/archives/' },
-            ],
-          },
-        ],
-      },
-      
-    ],
+    nav, // 导航配置
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
     repo: 'zouquchen/marvel-site', // 导航栏右侧生成Github链接
@@ -190,7 +88,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         "但凡不能杀死你的，最终都会使你更强大。 ——尼采",
         "每一个不曾起舞的日子，都是对生命的辜负。 ——尼采",
         "与怪物战斗的人，应当小心自己不要成为怪物。当你远远凝视深渊时，深渊也在凝视你。 ——尼采",
-        "欢迎光临本站，我是一名致力于抢计算机饭碗的自动化专业在读研究生！  ——Marvel",
       ],  
       descFontSize: '1.4rem',   // desc 的字体大小，默认 1.4rem。提示：原主题是 1.1rem
       descFadeInTime: 200,  // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒

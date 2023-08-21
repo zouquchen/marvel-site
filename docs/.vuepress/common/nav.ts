@@ -67,7 +67,7 @@ export default [
         {
           text: 'NodeJS', link: '/nodejs/',
           items: [
-            { text: 'NodeJS', link:'' }
+            { text: 'NodeJS', link:'/pages/35e6ec/' }
           ]
         }
       ]

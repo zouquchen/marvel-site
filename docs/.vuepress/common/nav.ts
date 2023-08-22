@@ -61,7 +61,7 @@ export default [
         {
           text: '框架', link: '/architecture/',
           items: [
-            { text: 'React', link: '/pages/3007f3/'}
+            { text: 'React', link: '/pages/1731df/'}
           ]
         },
         {

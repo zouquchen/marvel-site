@@ -50,26 +50,27 @@ export default [
     {
       text: '前端', link: '/frontend/',
       items: [
-        {
-          text: '基础', link: '/frontedBasic/',
-          items: [
-            { text: 'HTML', link: '/pages/19e353/' },
-            { text: 'CSS', link: '/pages/19e353/' },
-            { text: 'ES', link: '/pages/19e353/' },
-          ]
-        },
+        // {
+        //   text: '基础', link: '/frontedBasic/',
+        //   items: [
+        //     { text: 'HTML', link: '/pages/19e353/' },
+        //     { text: 'CSS', link: '/pages/19e353/' },
+        //     { text: 'ES', link: '/pages/19e353/' },
+        //   ]
+        // },
         {
           text: '框架', link: '/architecture/',
           items: [
-            { text: 'React', link: '/pages/1731df/'}
+            { text: 'React', link: '/pages/1731df/'},
+            { text: '其他', link: '/pages/fdd4d1/'},
           ]
         },
-        {
-          text: 'NodeJS', link: '/nodejs/',
-          items: [
-            { text: 'NodeJS', link:'/pages/35e6ec/' }
-          ]
-        }
+        // {
+        //   text: 'NodeJS', link: '/nodejs/',
+        //   items: [
+        //     { text: 'NodeJS', link:'/pages/35e6ec/' }
+        //   ]
+        // }
       ]
     },
     {
